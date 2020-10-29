@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SFHR - Sustainable Future Home Recepies</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>SF Home Recepies</h1>
+        <div title="Website Tabs">  
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="profile.html">Profile</a>
+            <search class="search">
+                <input id="searchbar" type="text" placeholder="Search for ingredients...">
+                <button onclick="getNewSearchResult()">Submit</button>
+            </search>    
+        </div>
+    </header>
+
+    <div class="profile">
+        <form action="">
+            <lable>Title:</lable>
+            <input type="text" placeholder="Title here..."><br>
+            <label>Description:</label>
+            <input type="text" placeholder="Description here..."><br>
+            <label> img: </label>
+            <input type="file" placeholder="HEj"><br>
+            <lable>Need more ingrediance slots?</lable>
+            <input type="button" placeholder="Click me!" onclick="newIngredianceSlot()">
+            <ol id="ingrediance_list">
+                <li><input type="text" placeholder="ingrediance here..."></li>
+                <li><input type="text" placeholder="ingrediance here..."></li>
+                <li><input type="text" placeholder="ingrediance here..."></li>
+                <li><input type="text" placeholder="ingrediance here..."></li>
+                <li><input type="text" placeholder="ingrediance here..."></li>
+            </ol>
+             
+        </form>
+    </div>
+    <script>
+        newIngredianceSlot = function () {
+            const template = document.createElement("template");
+            template.innerHTML = `
+                <li><input type="text" placeholder="ingrediance here..."></li>
+            `
+            //Print template
+            const ingred = document.querySelector("#ingrediance_list");
+            ingred.appendChild(template.content);
+        };
+    </script>
+</body>
+</html>
