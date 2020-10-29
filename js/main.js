@@ -1,54 +1,198 @@
 
 //Some test posts
 const post = [
-    post1 = { 
+    { 
         name: "Chicken tikka",
         desc: "This is a dish originating from India",
         img: "img/demo_img.jpg",
         rating: 15,
-        tags: ["chicken", "onion"]
-    }, post2 = {
+        tags: ["chicken", "onion", "cream", "salt"],
+        location: "hamburger.html"
+    }, 
+    {
         name: "Chilli con cane",
         desc: "This is a latin american dish",
         img: "img/demo_img.jpg",
         rating: 5,
-        tags: ["meat", "onion"]
-    }, post3 = {
+        tags: ["meat", "onion", "cream", "chilli", "beans"],
+        location: "hamburger.html"
+    }, 
+    {
         name: "Meatballs",
         desc: "Swedish allround food",
         img: "img/demo_img.jpg",
         rating: 7,
-        tags: ["meat", "onion"]
-    }, post4 = {
-        name: "Reetroot Soup",
+        tags: ["meat", "onion"],
+        location: "hamburger.html"
+    }, 
+    {
+        name: "Beetroot Soup",
         desc: "A traditional dish eaten by medival farmers",
         img: "img/demo_img.jpg",
         rating: 21,
-        tags: ["beetroot", "cream"]
-    }, post5 = {
+        tags: ["beetroot", "cream", "salt"],
+        location: "hamburger.html"
+    }, 
+    {
         name: "Spagetti",
         desc: "Originally from Italy, this dish is everywhere",
         img: "img/demo_img.jpg",
         rating: 9,
-        tags: ["eggs", "wheat"]
-    }, post5 = {
+        tags: ["eggs", "flour"],
+        location: "hamburger.html"
+    },
+    {
         name: "Some other generic food",
         desc: "Some other generic desciption",
         img: "img/demo_img.jpg",
         rating: 1,
-        tags: ["eggs", "cream"]
-    }, post6 = {
+        tags: ["eggs", "cream"],
+        location: "hamburger.html"
+    },
+    {
         name: "More authentic dishes",
         desc: "This is a description of another generic food",
         img: "img/demo_img.jpg",
         rating: 2,
-        tags: ["wheat", "cream"]
-    }, post7 = {
+        tags: ["wheat", "cream"],
+        location: "hamburger.html"
+    },
+    {
         name: "Tacos",
         desc: "Some more latin american food",
         img: "img/demo_img.jpg",
         rating: 15,
-        tags: ["meat", "onion"]
+        tags: ["meat", "onion", "corn", "avocado", "tortilla"],
+        location: "hamburger.html"
+    },
+    { 
+        name: "Pad thai",
+        desc: "A thailandian dish that tastes very good",
+        img: "img/demo_img.jpg",
+        rating: 15,
+        tags: ["chicken", "onion", "soy", "nudles", "cucumber"],
+        location: "hamburger.html"
+    },
+    {
+        name: "Stroganoff",
+        desc: "Swedish 'husmanskost'",
+        img: "img/demo_img.jpg",
+        rating: 5,
+        tags: ["meat", "cream", "tomatosause"],
+        location: "hamburger.html"
+    },
+    {
+        name: "Falafal",
+        desc: "Food originating from middleeastern culture",
+        img: "img/demo_img.jpg",
+        rating: 16,
+        tags: ["chickpeas"],
+        location: "hamburger.html"
+    },
+    {
+        name: "Very simple guacamole",
+        desc: "A traditional dish eaten by medival farmers",
+        img: "img/demo_img.jpg",
+        rating: 21,
+        tags: ["avocado"],
+        location: "hamburger.html"
+    }, 
+    {
+        name: "Grandmas fruitsalad",
+        desc: "How does these devises work???",
+        img: "img/demo_img.jpg",
+        rating: 25,
+        tags: ["pears", "apples", "bananas", "melon","orange"],
+        location: "hamburger.html"
+    }, 
+    {
+        name: "Crab",
+        desc: "scary creature with tasty inside",
+        img: "img/demo_img.jpg",
+        rating: 5,
+        tags: ["crabmeat", "garlic","butter"],
+        location: "hamburger.html"
+    }, 
+    {
+        name: "Food from my neighbour",
+        desc: "This comes from my neighbour",
+        img: "img/demo_img.jpg",
+        rating: 12,
+        tags: ["cream", "onion","meat"],
+        location: "hamburger.html"
+    }, 
+    {
+        name: "Hamburger",
+        desc: "Inspired from american food",
+        img: "img/demo_img.jpg",
+        rating: 39,
+        tags: ["meat", "onion","lettuc","tomato","dressing","bread"],
+        location: "hamburger.html"
+    },
+    //
+    { 
+        name: "Oatmeal",
+        desc: "This is a basic breakfast",
+        img: "img/demo_img.jpg",
+        rating: 12,
+        tags: ["wheat","water"],
+        location: "hamburger.html"
+    },
+    {
+        name: "Hotdog",
+        desc: "Simple warm sosage",
+        img: "img/demo_img.jpg",
+        rating: 2,
+        tags: ["hotdog", "bread"],
+        location: "hamburger.html"
+    },
+    {
+        name: "Pankakes",
+        desc: "Flat, sweet pancakes",
+        img: "img/raspberry.jpg",
+        rating: 23,
+        tags: ["flour", "milk","eggs","salt"],
+        location: "hamburger.html"
+    },
+    {
+        name: "Vegetable soup",
+        desc: "A traditional dish eaten by medival farmers",
+        img: "img/demo_img.jpg",
+        rating: 18,
+        tags: ["vegetables", "cream","water","spices"],
+        location: "hamburger.html"
+    },
+    {
+        name: "Pasta",
+        desc: "Originally from Italy, this dish is everywhere",
+        img: "img/demo_img.jpg",
+        rating: 13,
+        tags: ["eggs", "wheat"],
+        location: "hamburger.html"
+    },
+    {
+        name: "Rise bowl",
+        desc: "originated frome china",
+        img: "img/demo_img.jpg",
+        rating: 3,
+        tags: ["rise", "bowl"],
+        location: "hamburger.html"
+    },
+    {
+        name: "Burito",
+        desc: "Packaged food",
+        img: "img/demo_img.jpg",
+        rating: 12,
+        tags: ["tortilla", "meat","vegetables"],
+        location: "hamburger.html"
+    },
+    {
+        name: "Nut mix",
+        desc: "Nuts in a mix",
+        img: "img/demo_img.jpg",
+        rating: 11,
+        tags: ["peanuts","wallnuts"],
+        location: "hamburger.html"
     }
 ]
 
@@ -60,6 +204,7 @@ getNewPost = function(e) {
     //Define the post template
     const template = document.createElement("template");
     template.innerHTML = `
+        <a href="${e.location}">
         <div class="post">
         <h3 id="name">${e.name}</h3>
         <img id="img" src=${e.img}>
@@ -70,6 +215,7 @@ getNewPost = function(e) {
         <button>Comment</button>
         <p id="comments" style="display: inline;">0</p>
         </div>
+        <a>
     `
 
     //Print template
@@ -108,19 +254,22 @@ getNewSearchResult = function() {
     });
 }
 
-
-/* Generate infinite Posts
+/*
+// Generate infinite Posts
 window.onscroll = function(e) {    
     const last_post = document.querySelector(".post").lastChild;
     console.log(last_post);
     
-    /* Enable this for infinite Posts
+    //Enable this for infinite Posts
     while((window.innerHeight + pageYOffset) >= document.body.offsetHeight) {
         getNewPost(e);
     } 
     
 }
 */
+
+//Define JSON 
+
 
 //Sort recepies, showing the most rated highest
 post.sort(function(a, b) {return b.rating - a.rating});
@@ -129,35 +278,3 @@ post.sort(function(a, b) {return b.rating - a.rating});
 post.forEach((e) => getNewPost(e));
 
 
-
-// json laod and read file
-
-
-'use strict';
-
-const fs = require('fs');
-
-let recipie = {
-    name: "Food",
-    desc: "Description",
-    img: "img/demo_img.jpg",
-    rating: 5,
-    tags: ["tag1", "tag2"]
-};
-console.log("hej we did it")
-
-let data = JSON.stringify(recipie, null, 2);
-fs.writeFileSync('json/Recipies.json', data, (err) => {
-    if (err) throw err;
-    console.log('Data written to file');
-});
-
-
-
-fs.readFile('json/Recipies.json', (err, data) => {
-    if (err) throw err;
-    let recipies = JSON.parse(data);
-    console.log(recipie);
-});
-
-console.log('This is after the read call');

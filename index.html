@@ -5,16 +5,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    
     <!-- Header -->
     <header class="header">
         <h1>SF Home Recepies</h1>
-        <div title="Website Tabs">  
-            <a href="index.html">Home</a>
+        <div title="Website Tabs"> 
+            <a href="index.html" class="active">Home</a>
             <a href="about.html">About</a>
             <a href="profile.html">Profile</a>
             
             <search class="search">
-                <input id="searchbar" type="text" placeholder="Search for ingredients...">
+                <input id="searchbar" onchange="getNewSearchResult()" type="text" placeholder="Search for ingredients...">
                 <button onclick="getNewSearchResult()">Submit</button>
             </search>    
         </div>
@@ -22,6 +23,9 @@
 
     <!-- Main -->
     <div id="recipies" class="post_div" >
+        <style>
+            ::-webkit-scrollbar {width: 0;}
+        </style>
     </div>
 
     <!-- Scripts -->

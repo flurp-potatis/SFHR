@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SFHR - Recepies</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>SF Home Recepies</h1>
+        <div title="Website Tabs">  
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="profile.html">Profile</a>
+            
+            <search class="search">
+                <input id="searchbar" onchange="getNewSearchResult()" type="text" placeholder="Search for ingredients...">
+                <button onclick="getNewSearchResult()">Submit</button>
+            </search>    
+        </div>
+    </header>
+
+    <!-- Main -->
+    <style>
+        ::-webkit-scrollbar {width:0}
+    </style>
+    <div class="hamburger">
+        <h1>Hamburger</h1>
+        <img src="img/cook.jpg" >
+        <br>
+        <div class="ingredients">
+            <h4>Ingredients: (tags)<h4>
+            <ul>
+                <li>Hamburger bread (ica)</li>
+                <li>100g hamburger meat</li>
+                <li>One cucumber</li>
+                <li>One tomato</li>
+                <li>One pack of hamburger cheese (tempo)</li>
+                <li>A generic hamburger dressing</li>
+            </ul>
+        </div>
+        <br><br>
+        <div class="inst">
+            <h4>Recepie instructions:</h4>
+            <br>
+            <p class="">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et congue purus. Pellentesque eget tempus purus. In semper quis metus nec hendrerit. Quisque dictum blandit erat, ut tempor quam blandit et. Morbi tristique ut sapien porta sodales. Praesent in metus nibh. Aenean lacus ipsum, volutpat at consequat et, pharetra eu tellus. Pellentesque volutpat turpis a nunc malesuada efficitur. Integer pulvinar mi vitae magna ultrices, eget gravida erat porttitor.
+                Sed ut tortor non odio cursus faucibus. Sed quis quam lorem. Sed eu lorem eget eros finibus gravida sit amet eu dolor. Integer ultrices ultrices nulla, eu tempor mauris porttitor eget. Curabitur ullamcorper tellus in magna congue pellentesque. Nam aliquam quam sit amet orci auctor aliquet. Nulla ullamcorper ante urna, dignissim lacinia nunc pharetra in. Vestibulum in fringilla diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In nec nisl id ligula volutpat vestibulum non ac urna.
+                Vivamus aliquam lorem id iaculis vestibulum. Pellentesque at est leo. Morbi tincidunt vel tellus eget porttitor. Morbi dui purus, fringilla in egestas id, accumsan eu felis. Fusce interdum sapien vel imperdiet molestie. Donec ac eleifend quam. Quisque molestie eget dolor et aliquet. In vel nisi lacinia sem lobortis rutrum.
+                Morbi et dui mollis, mattis lectus sit amet, auctor risus. Nulla fermentum viverra purus id maximus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent ac cursus libero. Donec sagittis placerat rutrum. Donec nunc tortor, accumsan eu lorem ullamcorper, consectetur bibendum diam. Donec commodo mollis pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lectus lacus, rhoncus in commodo nec, feugiat in ex. Fusce maximus tempor sodales. Curabitur a magna ipsum. Proin consectetur porta risus, id ultricies dui faucibus sed. In quis pharetra nibh. Sed fringilla risus diam, eu congue arcu pulvinar sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam auctor, neque non pharetra faucibus, neque justo lacinia metus, in efficitur elit tortor varius mauris.
+                Quisque eu turpis at massa consequat eleifend nec sit amet arcu. Ut eget bibendum metus. Etiam vitae lacus sed magna pellentesque lobortis vitae ac ligula. Curabitur ullamcorper convallis mi, quis tempus justo viverra eget. Nullam tortor felis, facilisis sit amet lobortis ac, iaculis eget lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla fringilla, risus ac faucibus pharetra, augue lorem vestibulum nisl, vitae rhoncus orci ante at lorem. Morbi condimentum tortor nec metus venenatis, sit amet semper nisi dignissim. Maecenas maximus nisl vel ex dictum mattis. Etiam pretium purus quam, tempus dictum mauris tincidunt quis.
+            </p>
+        </div>
+        <br>
+        <div class="buttons">
+            <button>Like</button> <p tag="likes">31</p>
+            <button>Comment</button> <p tag="comments">0</p>
+        </div>
+    </div>
+
+
+    <!-- Script -->
+    <script src="js/main.js"></script>
+</body>
+</html>

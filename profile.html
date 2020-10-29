@@ -3,52 +3,57 @@
 <head>
     <title>SFHR - Sustainable Future Home Recepies</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profilestyle.css">
 </head>
 <body>
+    <style>
+        ::-webkit-scrollbar {width: 0;}
+    </style>
     <!-- Header -->
     <header class="header">
         <h1>SF Home Recepies</h1>
         <div title="Website Tabs">  
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="profile.html">Profile</a>
+            <a href="profile.html" class="active">Profile</a>
+
             <search class="search">
-                <input id="searchbar" type="text" placeholder="Search for ingredients...">
+                <input id="searchbar" onchange="getNewSearchResult()" type="text" placeholder="Search for ingredients...">
                 <button onclick="getNewSearchResult()">Submit</button>
             </search>    
         </div>
     </header>
 
-    <div class="profile">
+    <!-- Main -->
+    <div class="Recepie">
+        <h2>Create Recepies</h2>
         <form action="">
-            <lable>Title:</lable>
-            <input type="text" placeholder="Title here..."><br>
-            <label>Description:</label>
-            <input type="text" placeholder="Description here..."><br>
-            <label> img: </label>
-            <input type="file" placeholder="HEj"><br>
-            <lable>Need more ingrediance slots?</lable>
-            <input type="button" placeholder="Click me!" onclick="newIngredianceSlot()">
+            <input type="text" placeholder="Title here..." class="title"><br>
+            <textarea rows="10" cols="40" wrap="soft" placeholder="Description..." class="desc"></textarea><br>
+            <label>Uppload an img here:</label>
+            <input type="file" accept="image/png, image/jpeg" class="image"><br>
+            <lable>Need more ingredients slots?</lable>
+            <input type="button" class="button1" onclick="newIngredianceSlot()">
             <ol id="ingrediance_list">
-                <li><input type="text" placeholder="ingrediance here..."></li>
-                <li><input type="text" placeholder="ingrediance here..."></li>
-                <li><input type="text" placeholder="ingrediance here..."></li>
-                <li><input type="text" placeholder="ingrediance here..."></li>
-                <li><input type="text" placeholder="ingrediance here..."></li>
+                <li class="ingrediance"><input type="text" placeholder="ingrediance here..."></li>
             </ol>
-             
+            <lable>Feel ready to submit?</lable>
+            <input type="submit" value="Submit" class="submit">
         </form>
     </div>
-    <script>
-        newIngredianceSlot = function () {
-            const template = document.createElement("template");
-            template.innerHTML = `
-                <li><input type="text" placeholder="ingrediance here..."></li>
-            `
-            //Print template
-            const ingred = document.querySelector("#ingrediance_list");
-            ingred.appendChild(template.content);
-        };
-    </script>
+    <div class="Profile">
+        <!--
+        <p>User name: User1</p>  
+        <p>Ingredients at home:</p>
+        <ul>
+            <li></li>
+            <li></li>
+        <ul>
+    </div> 
+    -->
+
+    <!-- Script -->
+    <script src="js/main.js"></script>
+    <script src="js/input.js"></script>
 </body>
 </html>

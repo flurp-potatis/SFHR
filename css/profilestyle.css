@@ -1,0 +1,43 @@
+.Recepie {
+    margin: 30px;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+h2{
+    margin-left: 10px;
+}
+
+.title {
+    font-size: 30px;
+    margin: 10px;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+.desc {
+    font-size: 20px;
+    margin: 10px;
+    width: 350px;
+    height: 120px;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+.image {
+    font-size: 16px;
+}
+
+.button1 {
+    width: 25px;
+    height: 25px;
+    background-color: cornsilk;
+    border-radius: 6px;
+    border: 1px solid black; 
+}
+.ingrediance {
+    border-radius: 6px;
+    margin: 5px;
+}
+

@@ -5,19 +5,45 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <style>
+        ::-webkit-scrollbar{width: 0;}
+    </style>
     <!-- Header -->
     <header class="header">
         <h1>SF Home Recepies</h1>
         <div title="Website Tabs">  
             <a href="index.html">Home</a>
-            <a href="about.html">About</a>
+            <a href="about.html" class="active">About</a>
             <a href="profile.html">Profile</a>
+
             <search class="search">
-                <input id="searchbar" type="text" placeholder="Search for ingredients...">
+                <input id="searchbar" onchange="getNewSearchResult()" type="text" placeholder="Search for ingredients...">
                 <button onclick="getNewSearchResult()">Submit</button>
-            </search>    
+            </search>     
         </div>
     </header>
+
+    <!-- Main -->
+    <div style="text-align: center; margin: 0 20px 0 20px;">
+        <h2>This is SF Home Recepies</h2>
+        <br>
+        <p>We started this project with the aim to improve on the <strong>health and wellbeing</strong> of Nordic citizens.</p>
+        <br>
+        <p>With this goal in mind we set out to create an app that would do just that. Now this is a hard thing to do, especially given that we had no prior experience with neither front- or backend programming. or appdevelopment.</p>
+        <p>Inspired by Wikipedia, we saw that a common health issue, especially when it comes to our generation - students - is that, while there are different websites that provides with a diverse collection of recepies,</p>
+        <p>it's still quite difficult to navigate the swamp of input that arises. And who even buys a cooking book?!</p>
+        <br>
+        <p>That's why we created SF Home Recepies. It strives to be an open collection of different recepies, available to anyone to <strong>share, explore, discover and collect</strong>.</p>
+        <p>No strings attatched. No ads back-agenda to proffit. Just people sharing their recepies.</p>
+        <br>
+        <p><strong>Enjoy!</strong></p>
+        <br><br>
+        <p><em>Hök & Johansen</em></p>
+        <br>
+        <p><em>dunkelen@gmail.com & flurp.potatis@gmail.com</em></p>
+    </div>
+    <!-- Script -->
+    <script src="js/main.js"></script>
 
 </body>
 </html>

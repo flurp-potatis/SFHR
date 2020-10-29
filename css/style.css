@@ -3,32 +3,48 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
 /* Header */
 
 .header {
     background-color: sandybrown;
     background-image: url("../img/food.jpg");
     background-size: cover;
-    padding: 5px;
+    padding: 40px;
     user-select: none;
     transition-duration: 500ms;
-    margin:-10px
+    margin:-10px;
 }
 
 .header h1 {
     text-align: center;
     color: white;
+    font-size: 40px;
 }
 
 .header a {
     text-decoration: none;
     color: white;
-    font-size: 30px;
+    opacity: 100%;
+    font-size: 35px;
     margin-left: 30px;
+    font-weight: normal;
+    padding: 10px;
+
+    transition: 500ms;
+}
+
+.header a.active {
+    color: lightcoral;
 }
 
 .header a:hover {
-    color: white;
+    color:lightgray;
+    opacity: 80%;
     transition-duration: 350ms;
 }
 
@@ -38,7 +54,7 @@ body {
 
 .search input {
     font-size: 13px;
-    border-radius: 15%;
+    border-radius: 6px;
     margin-right: 10px;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -54,14 +70,16 @@ body {
     background-color: snow;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
-    box-shadow: 0px 4px lightslategray;
+    margin-bottom: 2px;
+    box-shadow: 0px 4px white;
+    margin-right: 50px;
 }
 
 .search button:hover {
     transition-duration: 350ms;
 
     transform: translate(0, 2px);
-    box-shadow: 0px 2px darkgrey;
+    box-shadow: 0px 2px white;
 }
 
 .search button:active {
@@ -70,38 +88,35 @@ body {
 
 /* Screen management */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
     .header a, .search {
         float: none;
         text-align: center;
         display: block;
         margin-bottom: 5px;
-        transition-duration: 300ms;
+        transition-duration: 600ms;
     }
 
     .search {
         margin-top: 15px;
+        justify-content: center;
     }
 
     .search button {
         float: none;
+        justify-content: center;
     }
 }
 
 
-/* Main - Post - Div */
+/* Main - Post */
 
-.post_div {
+.post_div { /* The main div  */
     display: flex;
     flex-wrap:wrap; 
     justify-content: center; 
     margin: 10px 10px 10px 10px;
 }
-
-
-
-
-/* Main - Post */
 
 .post {
     background-color: lightsteelblue;
@@ -109,16 +124,17 @@ body {
     margin-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
-    font-family: Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     user-select: none;
     box-shadow: 5px 10px 1px 0px lightgray;
     cursor: pointer;
     width: 450px;
-    
+    transform: translate(-3px, -5px);
+    transition-duration: 500ms;
 }
 
 .post:hover {
-    transition-duration: 350ms;
+    transition-duration: 500ms;
 
     background-color: lightyellow;
     transform: translate(3px, 5px);
@@ -131,7 +147,7 @@ body {
 
 .post h3 {
     display: inline;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .post img {
@@ -156,8 +172,107 @@ body {
 }
 
 
-/* Profile */
+/* Hamburger */
 
-.profile {
-    margin: 30px
+
+.hamburger {
+    user-select: none;
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display:block;
+    text-align: center;
+}
+
+.hamburger h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 65px;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+.hamburger img {
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    justify-content: center;
+    position: relative;
+    margin: 25px;
+}
+
+.hamburger .ingredients {
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 20px;
+    display:block;
+    text-align: left;
+    box-shadow: 10px 10px 0px 0px palegoldenrod;
+    transform: translate(-3px, -5px);
+
+    transition-duration: 1200ms;
+}
+
+.hamburger .ingredients:hover {
+    transform: translate(3px, 5px);
+    box-shadow: 7px 5px 0px 0px grey;
+    background-color: rgb(240, 144, 60);
+
+    transition-duration: 1200ms;
+}
+
+.hamburger .ingredients li:hover {
+    color: brown;
+}
+
+.hamburger .inst {
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 20px;
+    display:block;
+    text-align: center;
+    box-shadow: 10px 10px 0px 0px palegoldenrod;
+    transform: translate(-3px, -5px);
+
+    transition-duration: 1200ms;
+}
+
+.hamburger .inst:hover {
+    transform: translate(3px, 5px);
+    box-shadow: 7px 5px 0px 0px grey;
+    background-color:rgb(240, 144, 60);
+
+    transition-duration: 1200ms;  
+}
+
+.hamburger .buttons {
+    display: flex;
+    margin: 10px;
+}
+
+.hamburger .buttons button {
+    margin: 10px;
+    margin-right:14px;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    border-radius: 6px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 0px 0px palegoldenrod;
+    outline: none;
+    transform: translate(-3px, -5px);
+    transition-duration: 800ms; 
+}
+
+.hamburger .buttons button:hover {
+    transform: translate(3px, 5px);
+    box-shadow: 7px 5px 0px 0px grey;
+
+    transition-duration: 800ms;   
+}
+
+.hamburger .buttons button:active {
+    transform: translate(6px, 10px);
+    box-shadow: 4px 0px 0px 0px grey;
+
+    transition-duration: 200ms;   
 }
